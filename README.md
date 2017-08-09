@@ -95,7 +95,7 @@ extension ArrowSectionHeaderView: HeaderFooterViewCollapsible
 }
 ```
 
-Create a collection of model items that represent each section of your table view.
+Create a collection of instances that represent each section of your table view.
 
 ```swift
 import Foundation
@@ -130,7 +130,7 @@ class Item
 }
 ```
 
-Each model item must conform to **CollapsibleTableSectionDatasource**.
+Each model instance representing your table view sections, must conform to **CollapsibleTableSectionDatasource**.
 
 ```swift
 extension Food: CollapsibleTableSectionDatasource
