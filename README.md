@@ -4,6 +4,7 @@
 [![Cocoapods compatible](https://img.shields.io/badge/Cocoapods-Compatible-yellow.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-iOS%208%2B-Orange.svg)]()
 [![Language](https://img.shields.io/badge/Swift-3.2%2B-blue.svg)]()
+[![Build Status](https://travis-ci.org/rob-nash/CollapsibleTable.svg?branch=master)](https://travis-ci.org/rob-nash/CollapsibleTable)
 
 The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
 
