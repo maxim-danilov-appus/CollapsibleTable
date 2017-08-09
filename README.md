@@ -2,10 +2,22 @@
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/badge/Platform-iOS%208%2B-Orange.svg)]()
+[![Language](https://img.shields.io/badge/Swift-3.2%2B-blue.svg)]()
+[![Cocoapods compatible](https://img.shields.io/badge/Cocoapods-Compatible-yellow.svg)]()
 
 The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
 
 ![](https://i.imgur.com/HjznyIf.gif)
+
+## Installation
+
+**CocoaPods:**
+
+Add the line `pod "CollapsibleTable"` to your `Podfile`
+
+**Carthage:**
+
+Add the line `github "rob-nash/CollapsibleTable"` to your `Cartfile`
 
 ## Usage
 
