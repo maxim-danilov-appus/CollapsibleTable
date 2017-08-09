@@ -1,0 +1,10 @@
+language: swift
+
+branches:
+ only:
+ - master
+
+xcode_project: CollapsibleTable.xcodeproj
+xcode_scheme: CollapsibleTable
+osx_image: xcode9
+xcode_sdk: iphonesimulator11.0
