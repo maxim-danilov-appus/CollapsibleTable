@@ -5,7 +5,7 @@
 
 The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
 
-![Demo](http://gph.is/2uppqv0)
+![](https://i.imgur.com/HjznyIf.gif)
 
 ## Usage
 
