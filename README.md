@@ -9,6 +9,8 @@ The collapsing mechanism can be installed in just a few minutes. But the creativ
 
 ![demo](Screenshots/demo.gif)
 
+Take a look at the demo App by running the XCode scheme 'CollapsibleTableDemo'
+
 ## Installation
 
 **CocoaPods:**
