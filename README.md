@@ -1,9 +1,9 @@
 # CollapsibleTable
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-green.svg)](https://github.com/Carthage/Carthage)
+[![Cocoapods compatible](https://img.shields.io/badge/Cocoapods-Compatible-yellow.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-iOS%208%2B-Orange.svg)]()
 [![Language](https://img.shields.io/badge/Swift-3.2%2B-blue.svg)]()
-[![Cocoapods compatible](https://img.shields.io/badge/Cocoapods-Compatible-yellow.svg)]()
 
 The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
 
@@ -235,3 +235,10 @@ class ViewController: UIViewController
     }
 }
 ```
+
+### Donations.
+<p>If you like this and you want to buy me a drink, use bitcoin.</p>
+
+![Bitcoin Image](Resources/Bitcoin.jpg)
+
+Bitcoin Address: 15Gj4DBTzSujnJrfRZ6ivrR9kDnWXNPvNQ
