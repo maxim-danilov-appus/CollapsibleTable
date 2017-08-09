@@ -18,4 +18,9 @@ class ViewController: UIViewController
             tableView.delegate = appDelegate?.foodShoppingTableViewDelegate
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Shopping"
+    }
 }
