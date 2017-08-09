@@ -5,6 +5,8 @@
 
 The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
 
+![Demo](http://gph.is/2uppqv0)
+
 ## Usage
 
 First subclass **UITableViewHeaderFooterView**
@@ -148,13 +150,11 @@ extension Food: CollapsibleTableSectionDatasource
     }
     
     var sectionHeaderNibName: String {
-        let name = Constants.ArrowSectionHeaderView
-        return name.rawValue
+        return "ArrowSectionHeaderView"
     }
     
     var sectionHeaderViewIdentifier: String {
-        let name = Constants.ArrowSectionHeaderView
-        return name.reuseIdentifier
+        return "ArrowSectionHeaderViewID"
     }
     
     var sectionHeaderNibBundle: Bundle {
