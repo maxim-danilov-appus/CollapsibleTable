@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		500776DE1F3C6044002394FF /* CollapsibleTableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500776DD1F3C6044002394FF /* CollapsibleTableDemoUITests.swift */; };
+		500F8D9C1F3C7D7E00286D87 /* CollapsibleTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F8D9B1F3C7D7E00286D87 /* CollapsibleTableTests.swift */; };
+		500F8D9E1F3C7D7E00286D87 /* CollapsibleTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */; };
 		504840DC1F3B11EF009C533C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504840DB1F3B11EF009C533C /* Constants.swift */; };
 		507E38181F3B2494003D716F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E38171F3B2494003D716F /* Item.swift */; };
 		507E381A1F3B26DB003D716F /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E38191F3B26DB003D716F /* ModelBuilder.swift */; };
@@ -44,6 +46,13 @@
 			remoteGlobalIDString = 50D7FB751F3B025900682C91;
 			remoteInfo = CollapsibleTableDemo;
 		};
+		500F8D9F1F3C7D7E00286D87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D7FB4C1F3AFE8600682C91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D7FB541F3AFE8600682C91;
+			remoteInfo = CollapsibleTable;
+		};
 		50D7FB8A1F3B026600682C91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50D7FB4C1F3AFE8600682C91 /* Project object */;
@@ -71,6 +80,9 @@
 		500776DB1F3C6043002394FF /* CollapsibleTableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsibleTableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500776DD1F3C6044002394FF /* CollapsibleTableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableDemoUITests.swift; sourceTree = "<group>"; };
 		500776DF1F3C6044002394FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500F8D991F3C7D7E00286D87 /* CollapsibleTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsibleTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		500F8D9B1F3C7D7E00286D87 /* CollapsibleTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableTests.swift; sourceTree = "<group>"; };
+		500F8D9D1F3C7D7E00286D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		504840DB1F3B11EF009C533C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		507E38171F3B2494003D716F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		507E38191F3B26DB003D716F /* ModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
@@ -109,6 +121,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		500F8D961F3C7D7E00286D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F8D9E1F3C7D7E00286D87 /* CollapsibleTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D7FB511F3AFE8600682C91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +154,15 @@
 				500776DF1F3C6044002394FF /* Info.plist */,
 			);
 			path = CollapsibleTableDemoUITests;
+			sourceTree = "<group>";
+		};
+		500F8D9A1F3C7D7E00286D87 /* CollapsibleTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				500F8D9B1F3C7D7E00286D87 /* CollapsibleTableTests.swift */,
+				500F8D9D1F3C7D7E00286D87 /* Info.plist */,
+			);
+			path = CollapsibleTableTests;
 			sourceTree = "<group>";
 		};
 		507E381B1F3B2B86003D716F /* Views */ = {
@@ -166,6 +195,7 @@
 				50D7FB571F3AFE8600682C91 /* CollapsibleTable */,
 				50D7FB771F3B025900682C91 /* CollapsibleTableDemo */,
 				500776DC1F3C6044002394FF /* CollapsibleTableDemoUITests */,
+				500F8D9A1F3C7D7E00286D87 /* CollapsibleTableTests */,
 				50D7FB561F3AFE8600682C91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,6 +206,7 @@
 				50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */,
 				50D7FB761F3B025900682C91 /* CollapsibleTableDemo.app */,
 				500776DB1F3C6043002394FF /* CollapsibleTableDemoUITests.xctest */,
+				500F8D991F3C7D7E00286D87 /* CollapsibleTableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +274,24 @@
 			productReference = 500776DB1F3C6043002394FF /* CollapsibleTableDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		500F8D981F3C7D7E00286D87 /* CollapsibleTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500F8DA11F3C7D7E00286D87 /* Build configuration list for PBXNativeTarget "CollapsibleTableTests" */;
+			buildPhases = (
+				500F8D951F3C7D7E00286D87 /* Sources */,
+				500F8D961F3C7D7E00286D87 /* Frameworks */,
+				500F8D971F3C7D7E00286D87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				500F8DA01F3C7D7E00286D87 /* PBXTargetDependency */,
+			);
+			name = CollapsibleTableTests;
+			productName = CollapsibleTableTests;
+			productReference = 500F8D991F3C7D7E00286D87 /* CollapsibleTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		50D7FB541F3AFE8600682C91 /* CollapsibleTable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50D7FB5D1F3AFE8600682C91 /* Build configuration list for PBXNativeTarget "CollapsibleTable" */;
@@ -294,6 +343,9 @@
 						CreatedOnToolsVersion = 9.0;
 						TestTargetID = 50D7FB751F3B025900682C91;
 					};
+					500F8D981F3C7D7E00286D87 = {
+						CreatedOnToolsVersion = 9.0;
+					};
 					50D7FB541F3AFE8600682C91 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -320,12 +372,20 @@
 				50D7FB541F3AFE8600682C91 /* CollapsibleTable */,
 				50D7FB751F3B025900682C91 /* CollapsibleTableDemo */,
 				500776DA1F3C6043002394FF /* CollapsibleTableDemoUITests */,
+				500F8D981F3C7D7E00286D87 /* CollapsibleTableTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		500776D91F3C6043002394FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F8D971F3C7D7E00286D87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,6 +418,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				500776DE1F3C6044002394FF /* CollapsibleTableDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		500F8D951F3C7D7E00286D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500F8D9C1F3C7D7E00286D87 /* CollapsibleTableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +470,11 @@
 			isa = PBXTargetDependency;
 			target = 50D7FB751F3B025900682C91 /* CollapsibleTableDemo */;
 			targetProxy = 500776E01F3C6044002394FF /* PBXContainerItemProxy */;
+		};
+		500F8DA01F3C7D7E00286D87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D7FB541F3AFE8600682C91 /* CollapsibleTable */;
+			targetProxy = 500F8D9F1F3C7D7E00286D87 /* PBXContainerItemProxy */;
 		};
 		50D7FB8B1F3B026600682C91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -453,6 +526,30 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CollapsibleTableDemo;
+			};
+			name = Release;
+		};
+		500F8DA21F3C7D7E00286D87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollapsibleTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		500F8DA31F3C7D7E00286D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollapsibleTableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -654,6 +751,15 @@
 			buildConfigurations = (
 				500776E31F3C6044002394FF /* Debug */,
 				500776E41F3C6044002394FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		500F8DA11F3C7D7E00286D87 /* Build configuration list for PBXNativeTarget "CollapsibleTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500F8DA21F3C7D7E00286D87 /* Debug */,
+				500F8DA31F3C7D7E00286D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
