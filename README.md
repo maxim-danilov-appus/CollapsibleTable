@@ -3,7 +3,7 @@
 [![Carthage compatible](https://img.shields.io/badge/carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
 [![Cocoapods compatible](https://img.shields.io/badge/cocoapods-compatible-green.svg)]()
 [![Platform](https://img.shields.io/badge/platform-iOS%208%2B-blue.svg)]()
-[![Language](https://img.shields.io/badge/language-swift%203.2-blue.svg)]()
+[![Language](https://img.shields.io/badge/language-swift%203.2%2B-blue.svg)]()
 [![Build Status](https://travis-ci.org/rob-nash/CollapsibleTable.svg?branch=master)](https://travis-ci.org/rob-nash/CollapsibleTable)
 
 The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
