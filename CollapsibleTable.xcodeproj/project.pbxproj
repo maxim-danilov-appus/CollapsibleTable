@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500776DE1F3C6044002394FF /* CollapsibleTableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500776DD1F3C6044002394FF /* CollapsibleTableDemoUITests.swift */; };
 		504840DC1F3B11EF009C533C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504840DB1F3B11EF009C533C /* Constants.swift */; };
 		507E38181F3B2494003D716F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E38171F3B2494003D716F /* Item.swift */; };
 		507E381A1F3B26DB003D716F /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E38191F3B26DB003D716F /* ModelBuilder.swift */; };
@@ -36,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		500776E01F3C6044002394FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50D7FB4C1F3AFE8600682C91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50D7FB751F3B025900682C91;
+			remoteInfo = CollapsibleTableDemo;
+		};
 		50D7FB8A1F3B026600682C91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50D7FB4C1F3AFE8600682C91 /* Project object */;
@@ -60,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		500776DB1F3C6043002394FF /* CollapsibleTableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsibleTableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		500776DD1F3C6044002394FF /* CollapsibleTableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableDemoUITests.swift; sourceTree = "<group>"; };
+		500776DF1F3C6044002394FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		504840DB1F3B11EF009C533C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		507E38171F3B2494003D716F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		507E38191F3B26DB003D716F /* ModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
@@ -91,6 +102,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		500776D81F3C6043002394FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D7FB511F3AFE8600682C91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500776DC1F3C6044002394FF /* CollapsibleTableDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				500776DD1F3C6044002394FF /* CollapsibleTableDemoUITests.swift */,
+				500776DF1F3C6044002394FF /* Info.plist */,
+			);
+			path = CollapsibleTableDemoUITests;
+			sourceTree = "<group>";
+		};
 		507E381B1F3B2B86003D716F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +165,7 @@
 			children = (
 				50D7FB571F3AFE8600682C91 /* CollapsibleTable */,
 				50D7FB771F3B025900682C91 /* CollapsibleTableDemo */,
+				500776DC1F3C6044002394FF /* CollapsibleTableDemoUITests */,
 				50D7FB561F3AFE8600682C91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +175,7 @@
 			children = (
 				50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */,
 				50D7FB761F3B025900682C91 /* CollapsibleTableDemo.app */,
+				500776DB1F3C6043002394FF /* CollapsibleTableDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +225,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		500776DA1F3C6043002394FF /* CollapsibleTableDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 500776E21F3C6044002394FF /* Build configuration list for PBXNativeTarget "CollapsibleTableDemoUITests" */;
+			buildPhases = (
+				500776D71F3C6043002394FF /* Sources */,
+				500776D81F3C6043002394FF /* Frameworks */,
+				500776D91F3C6043002394FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				500776E11F3C6044002394FF /* PBXTargetDependency */,
+			);
+			name = CollapsibleTableDemoUITests;
+			productName = CollapsibleTableDemoUITests;
+			productReference = 500776DB1F3C6043002394FF /* CollapsibleTableDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		50D7FB541F3AFE8600682C91 /* CollapsibleTable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50D7FB5D1F3AFE8600682C91 /* Build configuration list for PBXNativeTarget "CollapsibleTable" */;
@@ -243,6 +290,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Robert Nash";
 				TargetAttributes = {
+					500776DA1F3C6043002394FF = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 50D7FB751F3B025900682C91;
+					};
 					50D7FB541F3AFE8600682C91 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
@@ -268,11 +319,19 @@
 			targets = (
 				50D7FB541F3AFE8600682C91 /* CollapsibleTable */,
 				50D7FB751F3B025900682C91 /* CollapsibleTableDemo */,
+				500776DA1F3C6043002394FF /* CollapsibleTableDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		500776D91F3C6043002394FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D7FB531F3AFE8600682C91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,6 +353,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		500776D71F3C6043002394FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500776DE1F3C6044002394FF /* CollapsibleTableDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50D7FB501F3AFE8600682C91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,6 +398,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		500776E11F3C6044002394FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50D7FB751F3B025900682C91 /* CollapsibleTableDemo */;
+			targetProxy = 500776E01F3C6044002394FF /* PBXContainerItemProxy */;
+		};
 		50D7FB8B1F3B026600682C91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50D7FB541F3AFE8600682C91 /* CollapsibleTable */;
@@ -358,6 +430,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		500776E31F3C6044002394FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollapsibleTableDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CollapsibleTableDemo;
+			};
+			name = Debug;
+		};
+		500776E41F3C6044002394FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CollapsibleTableDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CollapsibleTableDemo;
+			};
+			name = Release;
+		};
 		50D7FB5B1F3AFE8600682C91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,7 +586,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -526,7 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -542,7 +640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertnash.CollapsibleTableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		500776E21F3C6044002394FF /* Build configuration list for PBXNativeTarget "CollapsibleTableDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500776E31F3C6044002394FF /* Debug */,
+				500776E41F3C6044002394FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		50D7FB4F1F3AFE8600682C91 /* Build configuration list for PBXProject "CollapsibleTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -11,4 +11,8 @@ class CustomCell: UITableViewCell
 {
     @IBOutlet weak var mainTitleLabel: UILabel!
     @IBOutlet weak var separatorView: UIView!
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }

@@ -13,12 +13,27 @@ import CollapsibleTable
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
     var window: UIWindow?
-    // foods must be a pointer so that it can be referenced in multiple locations
-    let foods: [Food] = ModelBuilder.makeFoods()
-    lazy var foodShoppingTableViewDatasource: FoodShoppingTableViewDatasource = {
-        return FoodShoppingTableViewDatasource(sections: self.foods)
-    }()
-    lazy var foodShoppingTableViewDelegate: FoodShoppingTableViewDelegate = {
-        return FoodShoppingTableViewDelegate(sections: self.foods)
-    }()
+    var foodShoppingTableViewDatasource: FoodShoppingTableViewDatasource?
+    var foodShoppingTableViewDelegate: FoodShoppingTableViewDelegate?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        // foods must be a pointer so that it can be referenced in multiple locations
+        let foods: [Food] = makeFoods()
+        foodShoppingTableViewDelegate = FoodShoppingTableViewDelegate(sections: foods)
+        foodShoppingTableViewDatasource = FoodShoppingTableViewDatasource(sections: foods)
+        return true
+    }
+    
+    private func makeFoods() -> [Food] {
+        let foods: [Food]
+        if CommandLine.arguments.contains("--uitesting") {
+            let argument = CommandLine.arguments[2]
+            let components = argument.split(separator: ":")
+            let code = components.dropFirst().joined(separator: ",")
+            foods = ModelBuilder.makeFoods(code)
+        } else {
+            foods = ModelBuilder.makeFoods()
+        }
+        return foods
+    }
 }
