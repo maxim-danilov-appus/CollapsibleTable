@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               = "CollapsibleTable"
-  s.version            = "1.0.0"
+  s.version            = "1.1.0"
   s.summary            = "A collapsible table view mechanism."
   s.description        = "A table view of collapsing table view sections"
   s.homepage           = "https://github.com/rob-nash/CollapsibleTable"
