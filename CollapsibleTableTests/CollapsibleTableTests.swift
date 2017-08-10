@@ -13,7 +13,7 @@ import CollapsibleTable
 class CollapsibleTableTests: XCTestCase {
     
     func testRetainCountTableCollapsible() {
-        var tableView: TableCollapsible? = TableView()
+        var tableView: TableView? = TableView()
         weak var weakTableView = tableView
         tableView = nil
         XCTAssert(weakTableView == nil)
