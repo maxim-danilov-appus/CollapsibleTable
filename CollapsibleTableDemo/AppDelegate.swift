@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     var window: UIWindow?
     // foods must be a pointer so that it can be referenced in multiple locations
     let foods: [Food] = ModelBuilder.makeFoods()
-    lazy var foodShoppingTableViewDatasource = FoodShoppingTableViewDatasource(sections: foods)
-    lazy var foodShoppingTableViewDelegate = FoodShoppingTableViewDelegate(sections: foods)
+    lazy var foodShoppingTableViewDatasource: FoodShoppingTableViewDatasource = {
+        return FoodShoppingTableViewDatasource(sections: self.foods)
+    }()
+    lazy var foodShoppingTableViewDelegate: FoodShoppingTableViewDelegate = {
+        return FoodShoppingTableViewDelegate(sections: self.foods)
+    }()
 }
