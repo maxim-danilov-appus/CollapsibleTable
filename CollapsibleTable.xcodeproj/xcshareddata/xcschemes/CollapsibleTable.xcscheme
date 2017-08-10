@@ -29,7 +29,26 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "500F8D981F3C7D7E00286D87"
+               BuildableName = "CollapsibleTableTests.xctest"
+               BlueprintName = "CollapsibleTableTests"
+               ReferencedContainer = "container:CollapsibleTable.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "50D7FB541F3AFE8600682C91"
+            BuildableName = "CollapsibleTable.framework"
+            BlueprintName = "CollapsibleTable"
+            ReferencedContainer = "container:CollapsibleTable.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

@@ -1,5 +1,7 @@
 language: swift
 
+script: Travis/script.sh
+
 branches:
  only:
  - master
