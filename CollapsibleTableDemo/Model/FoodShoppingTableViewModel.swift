@@ -1,16 +1,28 @@
 //
-//  FoodShoppingTableViewDatasourceDelegate.swift
+//  FoodShoppingTableViewModel.swift
 //  CollapsibleTableDemo
 //
-//  Created by Robert Nash on 09/08/2017.
+//  Created by Robert Nash on 19/08/2017.
 //  Copyright © 2017 Robert Nash. All rights reserved.
 //
 
 import UIKit
 import CollapsibleTable
 
-class FoodShoppingTableViewDelegate: CollapsibleTableDelegate<Food>
-{
+final class FoodShoppingTableViewModel: CollapsibleTableModel<Food> {
+    
+    //MARK: UITableViewDatasource
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: CustomCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
+        let section: Food = sections[indexPath.section]
+        let item: Item = section.rows[indexPath.row]
+        cell.mainTitleLabel?.text = item.title
+        return cell
+    }
+    
+    //MARK: UITableViewDelegate
+    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 44
     }

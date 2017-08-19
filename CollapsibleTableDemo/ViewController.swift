@@ -14,8 +14,8 @@ class ViewController: UIViewController
     @IBOutlet private weak var tableView: FoodShoppingTableView! {
         didSet {
             let appDelegate = UIApplication.shared.delegate as? AppDelegate
-            tableView.dataSource = appDelegate?.foodShoppingTableViewDatasource
-            tableView.delegate = appDelegate?.foodShoppingTableViewDelegate
+            tableView.dataSource = appDelegate?.foodShoppingTableViewModel
+            tableView.delegate = appDelegate?.foodShoppingTableViewModel
         }
     }
     

@@ -13,14 +13,10 @@ import CollapsibleTable
 class AppDelegate: UIResponder, UIApplicationDelegate
 {
     var window: UIWindow?
-    var foodShoppingTableViewDatasource: FoodShoppingTableViewDatasource?
-    var foodShoppingTableViewDelegate: FoodShoppingTableViewDelegate?
+    var foodShoppingTableViewModel: FoodShoppingTableViewModel?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        // foods must be a pointer so that it can be referenced in multiple locations
-        let foods: [Food] = makeFoods()
-        foodShoppingTableViewDelegate = FoodShoppingTableViewDelegate(sections: foods)
-        foodShoppingTableViewDatasource = FoodShoppingTableViewDatasource(sections: foods)
+        foodShoppingTableViewModel = FoodShoppingTableViewModel(sections: makeFoods())
         return true
     }
     

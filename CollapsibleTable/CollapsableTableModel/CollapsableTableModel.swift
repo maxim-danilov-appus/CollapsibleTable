@@ -1,7 +1,7 @@
 /**
  *  CollapsibleTable - Collapsible table view sections with custom section header views.
  *
- *  CollapsableTableDatasource.swift
+ *  CollapsableTableModel.swift
  *
  *  For usage, see documentation of the classes/symbols listed in this file.
  *
@@ -26,32 +26,6 @@
  *  SOFTWARE.
  */
 
-import UIKit
+import Foundation
 
-open class CollapsibleTableDatasource<T: CollapsibleTableSectionDatasource>: NSObject, UITableViewDataSource
-{
-    public let sections: [T]
-    
-    public init(sections: [T]) {
-        self.sections = sections
-    }
-    
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
-    }
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let section: T = sections[section]
-        switch section.state {
-        case .collapsed:
-            return 0
-        case .expanded:
-            return section.rows.count
-        }
-    }
-    
-    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        fatalError("Must override")
-    }
-}
-
+open class CollapsibleTableModel<T: CollapsibleTableSectionDatasource>: CollapsibleTableDelegate<T> {}

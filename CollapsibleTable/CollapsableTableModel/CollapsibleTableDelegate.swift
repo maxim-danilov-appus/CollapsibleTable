@@ -28,15 +28,9 @@
 
 import UIKit
 
-open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: NSObject, UITableViewDelegate
+open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: CollapsibleTableDatasource<T>, UITableViewDelegate
 {
-    public let sections: [T]
-    
-    public init(sections: [T]) {
-        self.sections = sections
-    }
-    
-    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let section: T = sections[section]
         let identifier: String = section.sectionHeaderViewIdentifier
         let view: HeaderFooterViewCollapsible? = tableView.dequeueReusableHeaderFooterView(withIdentifier: identifier) as? HeaderFooterViewCollapsible
@@ -44,7 +38,7 @@ open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: NSObj
         return view as? UIView
     }
     
-    public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    open func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let headerView = view as? HeaderFooterViewCollapsible
             else { return }
         let section: T = sections[section]
@@ -72,4 +66,3 @@ open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: NSObj
         
     }
 }
-

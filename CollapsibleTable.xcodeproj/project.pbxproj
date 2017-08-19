@@ -10,10 +10,12 @@
 		500776DE1F3C6044002394FF /* CollapsibleTableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500776DD1F3C6044002394FF /* CollapsibleTableDemoUITests.swift */; };
 		500F8D9C1F3C7D7E00286D87 /* CollapsibleTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F8D9B1F3C7D7E00286D87 /* CollapsibleTableTests.swift */; };
 		500F8D9E1F3C7D7E00286D87 /* CollapsibleTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */; };
+		503718471F48621A00F043F3 /* FoodShoppingTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503718461F48621A00F043F3 /* FoodShoppingTableViewModel.swift */; };
 		504840DC1F3B11EF009C533C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504840DB1F3B11EF009C533C /* Constants.swift */; };
 		507E38181F3B2494003D716F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E38171F3B2494003D716F /* Item.swift */; };
 		507E381A1F3B26DB003D716F /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E38191F3B26DB003D716F /* ModelBuilder.swift */; };
 		50A3B5AA1F3C87A8006844E4 /* CollapsibleTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A3B5A91F3C8784006844E4 /* CollapsibleTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50CBFD371F4854D4000A2786 /* CollapsableTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBFD361F4854D4000A2786 /* CollapsableTableModel.swift */; };
 		50D7FB791F3B025900682C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB781F3B025900682C91 /* AppDelegate.swift */; };
 		50D7FB7B1F3B025900682C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB7A1F3B025900682C91 /* ViewController.swift */; };
 		50D7FB7E1F3B025900682C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D7FB7C1F3B025900682C91 /* Main.storyboard */; };
@@ -22,8 +24,6 @@
 		50D7FB881F3B026600682C91 /* CollapsibleTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */; };
 		50D7FB891F3B026600682C91 /* CollapsibleTable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50D7FB901F3B03A700682C91 /* FoodShoppingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB8F1F3B03A700682C91 /* FoodShoppingTableView.swift */; };
-		50D7FB921F3B03BC00682C91 /* FoodShoppingTableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB911F3B03BC00682C91 /* FoodShoppingTableViewDatasource.swift */; };
-		50D7FB961F3B045100682C91 /* FoodShoppingTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB951F3B045100682C91 /* FoodShoppingTableViewDelegate.swift */; };
 		50D7FB981F3B047700682C91 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB971F3B047700682C91 /* Food.swift */; };
 		50D7FB9A1F3B049D00682C91 /* ArrowSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50D7FB991F3B049D00682C91 /* ArrowSectionHeaderView.xib */; };
 		50D7FB9C1F3B057000682C91 /* ArrowSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D7FB9B1F3B057000682C91 /* ArrowSectionHeaderView.swift */; };
@@ -84,10 +84,12 @@
 		500F8D991F3C7D7E00286D87 /* CollapsibleTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollapsibleTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500F8D9B1F3C7D7E00286D87 /* CollapsibleTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableTests.swift; sourceTree = "<group>"; };
 		500F8D9D1F3C7D7E00286D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503718461F48621A00F043F3 /* FoodShoppingTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShoppingTableViewModel.swift; sourceTree = "<group>"; };
 		504840DB1F3B11EF009C533C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		507E38171F3B2494003D716F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		507E38191F3B26DB003D716F /* ModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
 		50A3B5A91F3C8784006844E4 /* CollapsibleTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollapsibleTable.h; sourceTree = "<group>"; };
+		50CBFD361F4854D4000A2786 /* CollapsableTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableModel.swift; sourceTree = "<group>"; };
 		50D7FB551F3AFE8600682C91 /* CollapsibleTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollapsibleTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D7FB591F3AFE8600682C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D7FB631F3AFEFB00682C91 /* UITableView+HeaderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSection.swift"; sourceTree = "<group>"; };
@@ -102,8 +104,6 @@
 		50D7FB821F3B025900682C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50D7FB841F3B025900682C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50D7FB8F1F3B03A700682C91 /* FoodShoppingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShoppingTableView.swift; sourceTree = "<group>"; };
-		50D7FB911F3B03BC00682C91 /* FoodShoppingTableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShoppingTableViewDatasource.swift; sourceTree = "<group>"; };
-		50D7FB951F3B045100682C91 /* FoodShoppingTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodShoppingTableViewDelegate.swift; sourceTree = "<group>"; };
 		50D7FB971F3B047700682C91 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		50D7FB991F3B049D00682C91 /* ArrowSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrowSectionHeaderView.xib; sourceTree = "<group>"; };
 		50D7FB9B1F3B057000682C91 /* ArrowSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowSectionHeaderView.swift; sourceTree = "<group>"; };
@@ -184,11 +184,33 @@
 				50D7FB971F3B047700682C91 /* Food.swift */,
 				507E38171F3B2494003D716F /* Item.swift */,
 				507E38191F3B26DB003D716F /* ModelBuilder.swift */,
-				50D7FB911F3B03BC00682C91 /* FoodShoppingTableViewDatasource.swift */,
-				50D7FB951F3B045100682C91 /* FoodShoppingTableViewDelegate.swift */,
+				503718461F48621A00F043F3 /* FoodShoppingTableViewModel.swift */,
 				504840DB1F3B11EF009C533C /* Constants.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		50CBFD3A1F485633000A2786 /* CollapsableTableModel */ = {
+			isa = PBXGroup;
+			children = (
+				50CBFD361F4854D4000A2786 /* CollapsableTableModel.swift */,
+				50D7FBA11F3B06BF00682C91 /* CollapsibleTableSectionDatasource.swift */,
+				50D7FBA31F3B06EF00682C91 /* CollapsibleTableDelegate.swift */,
+				50D7FBA51F3B072000682C91 /* CollapsibleTableDatasource.swift */,
+			);
+			path = CollapsableTableModel;
+			sourceTree = "<group>";
+		};
+		50CBFD3B1F485679000A2786 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				50A3B5A91F3C8784006844E4 /* CollapsibleTable.h */,
+				50D7FB661F3AFEFC00682C91 /* Constants.swift */,
+				50D7FB671F3AFEFC00682C91 /* Int+Iterator.swift */,
+				50D7FB681F3AFEFC00682C91 /* Notification+HeaderViewTapGesture.swift */,
+				50D7FB631F3AFEFB00682C91 /* UITableView+HeaderSection.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		50D7FB4B1F3AFE8600682C91 = {
@@ -216,16 +238,10 @@
 		50D7FB571F3AFE8600682C91 /* CollapsibleTable */ = {
 			isa = PBXGroup;
 			children = (
-				50A3B5A91F3C8784006844E4 /* CollapsibleTable.h */,
-				50D7FB9D1F3B060400682C91 /* HeaderFooterViewCollapsible.swift */,
-				50D7FB671F3AFEFC00682C91 /* Int+Iterator.swift */,
-				50D7FBA51F3B072000682C91 /* CollapsibleTableDatasource.swift */,
-				50D7FBA31F3B06EF00682C91 /* CollapsibleTableDelegate.swift */,
-				50D7FBA11F3B06BF00682C91 /* CollapsibleTableSectionDatasource.swift */,
-				50D7FB661F3AFEFC00682C91 /* Constants.swift */,
-				50D7FB681F3AFEFC00682C91 /* Notification+HeaderViewTapGesture.swift */,
 				50D7FB9F1F3B064200682C91 /* TableCollapsible.swift */,
-				50D7FB631F3AFEFB00682C91 /* UITableView+HeaderSection.swift */,
+				50D7FB9D1F3B060400682C91 /* HeaderFooterViewCollapsible.swift */,
+				50CBFD3A1F485633000A2786 /* CollapsableTableModel */,
+				50CBFD3B1F485679000A2786 /* Other */,
 				50D7FB591F3AFE8600682C91 /* Info.plist */,
 			);
 			path = CollapsibleTable;
@@ -444,6 +460,7 @@
 				50D7FBAD1F3B091600682C91 /* Constants.swift in Sources */,
 				50D7FBAE1F3B091600682C91 /* Notification+HeaderViewTapGesture.swift in Sources */,
 				50D7FBA01F3B064200682C91 /* TableCollapsible.swift in Sources */,
+				50CBFD371F4854D4000A2786 /* CollapsableTableModel.swift in Sources */,
 				50D7FBAF1F3B091600682C91 /* UITableView+HeaderSection.swift in Sources */,
 				50D7FBA61F3B072000682C91 /* CollapsibleTableDatasource.swift in Sources */,
 			);
@@ -457,9 +474,8 @@
 				507E38181F3B2494003D716F /* Item.swift in Sources */,
 				50D7FB9C1F3B057000682C91 /* ArrowSectionHeaderView.swift in Sources */,
 				50D7FB7B1F3B025900682C91 /* ViewController.swift in Sources */,
-				50D7FB961F3B045100682C91 /* FoodShoppingTableViewDelegate.swift in Sources */,
 				50D7FB791F3B025900682C91 /* AppDelegate.swift in Sources */,
-				50D7FB921F3B03BC00682C91 /* FoodShoppingTableViewDatasource.swift in Sources */,
+				503718471F48621A00F043F3 /* FoodShoppingTableViewModel.swift in Sources */,
 				50D7FB901F3B03A700682C91 /* FoodShoppingTableView.swift in Sources */,
 				50D7FBB11F3B097400682C91 /* CustomCell.swift in Sources */,
 				50D7FB981F3B047700682C91 /* Food.swift in Sources */,
