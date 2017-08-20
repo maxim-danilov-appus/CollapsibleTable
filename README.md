@@ -6,7 +6,7 @@
 [![Language](https://img.shields.io/badge/language-swift%203.2%2B-blue.svg)]()
 [![Build Status](https://travis-ci.org/rob-nash/CollapsibleTable.svg?branch=master)](https://travis-ci.org/rob-nash/CollapsibleTable)
 
-The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer.
+The collapsing mechanism can be installed in just a few minutes. But the creative design and styling of the UI, is at the mercy of the implementing developer. The API expects you to use auto-layout for your table view and its subviews.
 
 ![demo](Screenshots/demo.gif)
 
