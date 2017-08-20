@@ -195,8 +195,8 @@
 			children = (
 				50CBFD361F4854D4000A2786 /* CollapsableTableModel.swift */,
 				50D7FBA11F3B06BF00682C91 /* CollapsibleTableSectionDatasource.swift */,
-				50D7FBA31F3B06EF00682C91 /* CollapsibleTableDelegate.swift */,
 				50D7FBA51F3B072000682C91 /* CollapsibleTableDatasource.swift */,
+				50D7FBA31F3B06EF00682C91 /* CollapsibleTableDelegate.swift */,
 			);
 			path = CollapsableTableModel;
 			sourceTree = "<group>";
