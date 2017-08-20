@@ -22,6 +22,10 @@ class FoodShoppingTableView: UITableView, TableCollapsible
         observeSectionHeaders()
     }
     
+    var singleSelectionOnly: Bool {
+        return true
+    }
+    
     deinit {
         stopObservingSectionHeaders()
     }
