@@ -58,6 +58,14 @@ open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: Colla
         return 0
     }
     
+    open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 0
+    }
+    
+    open func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 0
+    }
+    
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }

@@ -31,6 +31,14 @@ final class FoodShoppingTableViewModel: CollapsibleTableModel<Food> {
         return 44
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let section: Food = sections[indexPath.section]
         let item: Item = section.rows[indexPath.row]
