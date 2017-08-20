@@ -51,7 +51,7 @@ open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: Colla
     }
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
+        return UITableViewAutomaticDimension
     }
     
     open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
@@ -59,7 +59,7 @@ open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: Colla
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 0
+        return UITableViewAutomaticDimension
     }
     
     open func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
