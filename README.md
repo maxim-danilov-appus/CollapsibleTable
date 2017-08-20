@@ -202,13 +202,13 @@ class FoodShoppingTableView: UITableView, TableCollapsible
 }
 ```
 
-Create a datasource by subclassing CollapsibleTableDatasource<T>
+Create a model for your tableView by subclassing CollapsibleTableModel<T>
 
 ```swift
 import UIKit
 import CollapsibleTable
 
-class FoodShoppingTableViewDatasource: CollapsibleTableDatasource<Food>
+class FoodShoppingTableViewModel: CollapsibleTableModel<Food>
 {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CustomCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomCell
@@ -216,6 +216,37 @@ class FoodShoppingTableViewDatasource: CollapsibleTableDatasource<Food>
         let item: Item = section.rows[indexPath.row]
         cell.mainTitleLabel?.text = item.title
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let section: Food = sections[indexPath.section]
+        let item: Item = section.rows[indexPath.row]
+        if item.isSelected {
+            item.isSelected = false
+            tableView.deselectRow(at: indexPath, animated: true)
+        } else {
+            item.isSelected = true
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let section: Food = sections[indexPath.section]
+        let item: Item = section.rows[indexPath.row]
+        item.isSelected = false
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let section: Food = sections[indexPath.section]
+        let item: Item = section.rows[indexPath.row]
+        cell.setSelected(item.isSelected, animated: false)
     }
 }
 ```
@@ -231,7 +262,8 @@ class ViewController: UIViewController
     @IBOutlet private weak var tableView: FoodShoppingTableView! {
         didSet {
             let appDelegate = UIApplication.shared.delegate as? AppDelegate
-            tableView.dataSource = appDelegate?.foodShoppingTableViewDatasource
+            tableView.dataSource = appDelegate?.foodShoppingTableViewModel
+            tableView.delegate = appDelegate?.foodShoppingTableViewModel
         }
     }
 }
