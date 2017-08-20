@@ -24,6 +24,10 @@ final class FoodShoppingTableViewModel: CollapsibleTableModel<Food> {
     //MARK: UITableViewDelegate
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
         return 44
     }
     

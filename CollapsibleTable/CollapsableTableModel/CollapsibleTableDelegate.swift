@@ -51,7 +51,11 @@ open class CollapsibleTableDelegate<T: CollapsibleTableSectionDatasource>: Colla
     }
     
     open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        fatalError("Must override")
+        return 0
+    }
+    
+    open func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+        return 0
     }
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
